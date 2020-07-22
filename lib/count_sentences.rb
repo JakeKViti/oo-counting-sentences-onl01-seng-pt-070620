@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    sentenceCounter = 3
+    sentenceCounter = 0
     periodCounter = self.split.count(".")
     sentenceCounter += periodCounter
     exclamationCounter = self.split.count("!")

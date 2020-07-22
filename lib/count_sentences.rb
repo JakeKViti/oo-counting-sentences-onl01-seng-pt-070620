@@ -15,13 +15,6 @@ class String
   end
 
   def count_sentences
-    sentenceCounter = 0
-    periodCounter = self.count(".")
-    sentenceCounter += periodCounter
-    exclamationCounter = self.count("!")
-    sentenceCounter += exclamationCounter
-    questionCounter = self.count("?")
-    sentenceCounter += questionCounter
-    return sentenceCounter
+    self.split(/[.?!]+/).count
   end
 end

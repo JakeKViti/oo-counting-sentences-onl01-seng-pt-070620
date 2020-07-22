@@ -19,5 +19,6 @@ class String
     sentenceCounter += self.split.count(".")
     sentenceCounter += self.split.count("!")
     sentenceCounter += self.split.count("?")
+    return sentenceCounter
   end
 end

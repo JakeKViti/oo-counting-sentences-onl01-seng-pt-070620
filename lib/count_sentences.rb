@@ -16,11 +16,11 @@ class String
 
   def count_sentences
     sentenceCounter = 0
-    periodCounter = self.split.count(".")
+    periodCounter = self.count(".")
     sentenceCounter += periodCounter
-    exclamationCounter = self.split.count("!")
+    exclamationCounter = self.count("!")
     sentenceCounter += exclamationCounter
-    questionCounter = self.split.count("?")
+    questionCounter = self.count("?")
     sentenceCounter += questionCounter
     return periodCounter
   end

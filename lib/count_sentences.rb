@@ -22,6 +22,6 @@ class String
     sentenceCounter += exclamationCounter
     questionCounter = self.count("?")
     sentenceCounter += questionCounter
-    return periodCounter
+    return sentenceCounter
   end
 end
